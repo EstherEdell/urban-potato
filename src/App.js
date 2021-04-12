@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import PetList from './PetList.js';
 
 function App() {
+
+  const handleClick = () => {
+    console.log('buttons are cool')
+  }
+
+  const secondClick = () => {
+    console.log('clicked another!');
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Adopt Some Pets!</h1>
+      <p>We have the best animals!! They're so cute!!</p>
+
+      <p>MORE TEXT WOW SUCH TYPING</p>
+      <button onClick={handleClick}>Do you like buttons?</button>
+      <button onClick={secondClick}>More things to click!</button>
+      {/* <PetList /> */}
     </div>
   );
 }
